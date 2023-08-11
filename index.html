@@ -1,146 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="font-akya">
+  <body class="font-serif">
     <div class="h-screen mx-4 pb-4">
       <div class="flex justify-between mt-3">
         <div>
           <span class="text-blue-900 font-extrabold">Notifications</span>
           <span class="bg-blue-900 px-3 py-1 rounded-md text-white">3</span>
         </div>
-      </header>
+        <span class="text-gray-600">Mark as all read</span>
+      </div>
 
-      <main class="font-serif w-full flex flex-col items-center mt-4">
-        <div class="max-w-3xl">
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-mark-webber.webp"
-                alt=""
-                class="w-12 h-12"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">MarkWebber</span>
-              <span>reacted to your recent post </span>
-              <span class="font-medium text-black"
-                >My first tournament today!</span
-              >
-              <span class="text-red-500">●</span>
-              <span class="block">1m ago</span>
-            </div>
-          </div>
+      <!-- Notifications -->
+      <div class="bg-gray-100 text-gray-500 mt-3 rounded-lg pl-3 py-3 flex">
+        <img src="images/avatar-mark-webber.webp" alt="" class="h-12 w-12">
+        <div class="pl-3">
+          <span class="text-black font-bold">Mark Webber</span>
+          <span>reacted to your recent post</span>
+          <span class="text-gray-700">My First Tournament Today!</span>
+          <span class="text-red-500">●</span>
+          <span class="block">1m ago</span>
+        </div>
+      </div>
 
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-angela-gray.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Angela Gray</span>
-              <span>followed you</span>
-              <span class="text-red-500">●</span>
-              <span class="block">5m ago</span>
-            </div>
-          </div>
+      <div class="bg-gray-100 text-gray-500 mt-3 rounded-lg pl-3 py-3 flex">
+        <img src="images/avatar-angela-gray.webp" alt="" class="h-12 w-12">
+        <div class="pl-3">
+          <span class="text-black font-bold">Angela Gray</span>
+          <span>followed you</span>
+          <span class="text-red-500">●</span>
+          <span class="block">5m ago</span>
+        </div>
+      </div>
 
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-jacob-thompson.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Jaccob Thospom</span>
-              <span>has joined your group </span>
-              <span class="text-blue-800 font-bold">Chess Club</span>
-              <span class="text-red-500">●</span>
-              <span class="block">5m ago</span>
-            </div>
-          </div>
+      <div class="bg-gray-100 text-gray-500 mt-3 rounded-lg pl-3 py-3 flex">
+        <img src="images/avatar-jacob-thompson.webp" alt="" class="h-12 w-12">
+        <div class="pl-3">
+          <span class="text-black font-bold">Jacob Thompson</span>
+          <span>has joined your group</span>
+          <span class="text-blue-800 font-semibold">Chess Club</span>
+          <span class="text-red-500">●</span>
+          <span class="block">10m ago</span>
+        </div>
+      </div>
 
-          <div class="flex px-2 py-3 rounded-2xl mx-3">
-            <div class="mr-2">
-              <img
-                src="images/avatar-rizky-hasanuddin.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Jaccob Thospom</span>
-              <span> sent a private message</span>
-              <span class="block">5m ago</span>
-            </div>
+      <div class=" text-gray-500 mt-3 rounded-lg pl-3 py-3 flex">
+        <img src="images/avatar-rizky-hasanuddin.webp" alt="" class="h-12 w-12">
+        <div class="pl-3">
+          <span class="text-black font-bold">Rizky Hasanuddin</span>
+          <span>sent you a private message</span>
+          <span class="block">5days ago</span>
+          <div class="mr-3 border border-gray-300 p-4 mt-2 rounded-md">
+            Hello, thanks for setting up the Chess Club.I've been a member  of a few week nows and I'm having already lots of fun and improving my games
           </div>
-          <div class="rounded border-2 border-gray-500 p-3 w-64 ml-16 mb-4">
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+        </div>
+      </div>
+
+      <div class="text-gray-500 mt-3 pl-3 py-3 ">
+        <div class="grid grid-cols-10">
+          <div class="col-span-2">
+            <img src="images/avatar-kimberly-smith.webp" alt="" class="h-12 w-12">
+          </div>
+          <div class="col-span-7">
+            <span class="text-black font-bold">Kimberly Smith</span>
+            <span>commented on your photo</span>
+          </div>
+          <div class="pr-1">
+            <img src="images/image-chess.webp" alt="">
+          </div>
+        </div>
+        <span class="block pl-16">1week ago</span>
+        </div>  
+
+        <div class="text-gray-500 mt-3 rounded-lg pl-3 py-3 flex">
+          <img src="images/avatar-nathan-peterson.webp" alt="" class="h-12 w-12">
+          <div class="pl-3">
+            <span class="text-black font-bold">Nathan Peterson</span>
+            <span>reacted to your recent post</span>
+            <span class="text-gray-800">5 end-game strategies to increase your win rate</span>
+            <span class="block">2 weeks ago</span>
+          </div>
         </div>
 
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-kimberly-smith.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Jaccob Thospom</span>
-              <span> commented on your profile picture </span>
-              <span class="block">1 week ago</span>
-              <span>
-                <img src="images/image-chess.webp" alt="">
-              </span>
-            </div>
+        <div class="text-gray-500 mt-3 mb-6 rounded-lg pl-3 py-3 flex">
+          <img src="images/avatar-anna-kim.webp" alt="" class="h-12 w-12">
+          <div class="pl-3">
+            <span class="text-black font-bold">Anna Kim</span>
+            <span>left the group</span>
+            <span class="text-blue-800 font-semibold">Chess Club</span>
+            <span class="block">2 weeks ago</span>
           </div>
-
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-nathan-peterson.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Nathan Peterson</span>
-              <span> reacted to your recent post </span>
-              <span> 5 end-games stdsfds to win games </span>
-              <span class="text-red-500">●</span>
-              <span class="block">2 weeks ago</span>
-            </div>
-          </div>
-
-          <div class="flex bg-gray-200 px-2 py-3 rounded-2xl mb-3 mx-3">
-            <div class="mr-3">
-              <img
-                src="images/avatar-anna-kim.webp"
-                alt=""
-                class="w-11 h-11"
-              />
-            </div>
-            <div class="text-gray-500">
-              <span class="font-bold text-black">Jaccob Thospom</span>
-              <span>left the group </span>
-              <span class="text-blue-800 font-bold">Chess Club</span>
-              <span class="block">2 weeks ago</span>
-            </div>
-          </div>
-
         </div>
-      </main>
-    </div>
+    </div>      
   </body>
 </html>
